@@ -43,8 +43,42 @@ v.begin(), v.end()
 // parameter v
 // parameter it
 // parameter body
-for (typeof(v)::iterator it = v.begin(); it != v.end(); ++it) {
+for (typeof(v.begin()) t = v.begin(); it != v.end(); ++it) {
    body 
 }
 // end-snippet
 
+
+// begin-snippet cout
+// parameter x
+cout << x << endl;
+// end-snippet
+
+// begin-snippet sep
+// parameter x
+" " << x
+// end-snippet
+
+// begin-snippet couta
+// parameter a
+// parameter n
+if (debug) {
+    if (n > 0) cout << a[0]; 
+    for (int i = 1; i < n; ++i) cout << " " << a[i]; 
+    cout << endl;
+}
+
+// end-snippet
+
+// begin-snippet coutv
+// parameter v
+if (debug) {
+    string prefix;
+    for (typeof(v.begin()) it = v.begin(); it != v.end(); ++it) {
+        cout << prefix << *it;
+        prefix = " ";
+    }
+    cout << endl;
+}
+
+// end-snippet

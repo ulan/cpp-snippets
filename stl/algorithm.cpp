@@ -91,6 +91,19 @@ n = unique(a, a + n);
 
 // end-snippet
 
+// begin-snippet sort
+// parameter v
+sort(v.begin(), v.end());
+
+// end-snippet
+
+// begin-snippet sorta
+// parameter a
+// parameter n
+sort(a, a + n);
+
+// end-snippet
+
 // begin-snippet partition
 // parameter v
 // parameter cnt

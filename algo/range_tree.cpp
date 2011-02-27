@@ -110,7 +110,7 @@ struct max_query {
     static inline T zero() {return numeric_limits<T>::min();}
     static inline T plus(T a, T b) {return max(a, b);}
 };
-// end_snippet
+// end-snippet
 
 
 int main()
